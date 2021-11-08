@@ -26,6 +26,10 @@ p {
     text-align: center;
     margin-top: 1.625rem;
     margin-bottom:2.25rem;
+    @include breakpoint-up(medium) {
+        margin-top:6.5rem;
+        margin-bottom:5rem;
+    }
 }
 
 //input
@@ -74,7 +78,7 @@ button,.button {
 
 .container {
     margin-bottom: 2rem;
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
         margin-bottom: 2.75rem;
     }
 }
