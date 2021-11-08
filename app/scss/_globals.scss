@@ -1,0 +1,88 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *:after {
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $lightGrayishCyan;
+    font-size: 1rem;
+    font-weight: $heavyWeight;
+    color:$darkerGrayishCyan;
+}
+//paragraph
+
+p {
+    margin: 0; 
+    margin-bottom: 0.75rem;
+ }
+//logo 
+.logo {
+    text-align: center;
+    margin-top: 1.625rem;
+    margin-bottom:2.25rem;
+}
+
+//input
+.input-field {
+    height: 2.875rem;
+    width:100%;
+    outline: none;
+    cursor: pointer;
+    text-align: right; 
+    border:none;
+    border-radius: 0.5rem;
+    padding-right: 1rem;
+    background-color: $lighterGrayishCyan;
+    color:  $veryDarkCyan;
+    font-size: 1.5rem;
+    font-weight: $heavyWeight; 
+    &:focus {
+        border: solid 0.125rem $strongCyan;
+    } 
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }     
+} 
+
+.icon {
+    position:absolute;
+    margin:1rem;
+    padding: 0.625rem;
+    background-repeat: no-repeat;
+}
+
+//buttons
+
+button,.button {
+    padding: 0.4375rem  0;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: $heavyWeight;
+    cursor:pointer;
+}
+
+//container 
+
+.container {
+    margin-bottom: 2rem;
+    @include breakpoint-up(large) {
+        margin-bottom: 2.75rem;
+    }
+}
+
+//headlines
+h3 {
+    margin:0;
+    font-size: 1rem;
+    color: $white;
+}
+

@@ -1,0 +1,319 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c5e4e7;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5e7a7d;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 0.75rem;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 1.625rem;
+  margin-bottom: 2.25rem;
+}
+
+.input-field {
+  height: 2.875rem;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  text-align: right;
+  border: none;
+  border-radius: 0.5rem;
+  padding-right: 1rem;
+  background-color: #f4fafa;
+  color: #00494d;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.input-field:focus {
+  border: solid 0.125rem #26c0ab;
+}
+
+.input-field::-webkit-outer-spin-button, .input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.icon {
+  position: absolute;
+  margin: 1rem;
+  padding: 0.625rem;
+  background-repeat: no-repeat;
+}
+
+button, .button {
+  padding: 0.4375rem  0;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 64em) {
+  .container {
+    margin-bottom: 2.75rem;
+  }
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.calc {
+  background-color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  max-width: 57.5rem;
+  margin: auto;
+}
+
+@media (min-width: 40em) {
+  .calc {
+    max-height: 30rem;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 1.5rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .calc__interactive {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-right: 3rem;
+  }
+}
+
+.calc__bill .i-dollar {
+  background-image: url("../images/icon-dollar.svg");
+}
+
+.calc__bill input::-webkit-input-placeholder {
+  color: #7f9c9f;
+}
+
+.calc__bill input:-ms-input-placeholder {
+  color: #7f9c9f;
+}
+
+.calc__bill input::-ms-input-placeholder {
+  color: #7f9c9f;
+}
+
+.calc__bill input::placeholder {
+  color: #7f9c9f;
+}
+
+.calc__tip__percent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 40em) {
+  .calc__tip__percent {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.calc__tip__percent .tip__button {
+  background-color: #00494d;
+  color: white;
+}
+
+.calc__tip__percent .tip__button:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.calc__tip__percent .active-button {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.calc__tip__percent .active-input {
+  border: solid 0.125rem #26c0ab;
+}
+
+.calc__people i {
+  background-image: url("../images/icon-person.svg");
+}
+
+.calc__people .people__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calc__people .people__text p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.calc__people .people__text p:last-child {
+  text-align: right;
+  color: #ff8383;
+  opacity: 0;
+}
+
+.calc__people .people__text .error:last-child {
+  opacity: 1;
+}
+
+.calc__people > .error {
+  border: solid 0.125rem #ff8383;
+}
+
+.calc__sum {
+  position: relative;
+  padding: 1.375rem;
+  background-color: #00494d;
+  border-radius: 1rem;
+}
+
+@media (min-width: 40em) {
+  .calc__sum {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 2.25rem;
+  }
+}
+
+.calc__sum__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+@media (min-width: 40em) {
+  .calc__sum__amount {
+    margin-bottom: 2.25rem;
+  }
+}
+
+.calc__sum__amount .tip-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.calc__sum__amount .tip-text p {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.calc__sum__amount .tip-amount {
+  text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.5rem;
+  color: #26c0ab;
+}
+
+@media (min-width: 40em) {
+  .calc__sum__amount .tip-amount {
+    font-size: 2.25rem;
+  }
+}
+
+.calc__sum__amount .tip-amount .data {
+  position: relative;
+}
+
+.calc__sum__amount .tip-amount .data::after {
+  content: "";
+  position: absolute;
+  padding: 0.5rem;
+  background-image: url("../images/icon-dollar-cyan.svg");
+  background-repeat: no-repeat;
+  left: -0.75rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+@media (min-width: 40em) {
+  .calc__sum__amount .tip-amount .data::after {
+    padding: 0.875rem;
+    left: -1.25rem;
+    background-size: contain;
+  }
+}
+
+.calc__sum .reset {
+  color: #00494d;
+  background-color: #26c0ab;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+
+.calc__sum .reset:hover {
+  background-color: #c5e4e7;
+}
+
+@media (min-width: 40em) {
+  .calc__sum .reset {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 85%;
+    margin: 2.5rem 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
